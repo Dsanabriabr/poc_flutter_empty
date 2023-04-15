@@ -52,9 +52,10 @@ class _HomeViewPageState extends State<HomeViewPage> with HomeViewDelegate {
 
   // HomeViewDelegate
   @override
-  void homeViewFormCompleted(String heroName, String villainName, String historyContext) {
+  void homeViewFormCompleted(String heroName, String villainName, String contextStory) {
     widget.viewModel.heroName = heroName;
-    widget.viewModel.heroName = villainName;
-    widget.viewModel.heroName = historyContext;
+    widget.viewModel.villainName = villainName;
+    widget.viewModel.contextStory = contextStory;
+    widget.viewModel.moralStory = "never lie";
   }
 }
