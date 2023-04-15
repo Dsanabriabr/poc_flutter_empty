@@ -123,6 +123,7 @@ class _HomeViewState extends State<HomeView> {
               ElevatedButton(
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
+                    homeViewFormCompleted();
                     ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text('Processing Data')));
                   }
@@ -138,7 +139,7 @@ class _HomeViewState extends State<HomeView> {
 
 
 //HomeViewDelegate
-  void homeViewFormCompleted(String heroName, String villainName, String historyContext) {
+  void homeViewFormCompleted() {
     widget.delegate.homeViewFormCompleted(_heroName, _villainName, _historyContexts[_currentIndex]);
   }
 }
