@@ -1,5 +1,5 @@
 import '../DTOs/request_data.dart';
-import '../Interfaces/Repositories/network_repository_interdace.dart';
+import '../Interfaces/Repositories/network_repository_interface.dart';
 import '../Interfaces/UseCases/get_story_usecase_interface.dart';
 import 'package:result_dart/result_dart.dart';
 

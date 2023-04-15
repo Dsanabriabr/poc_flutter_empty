@@ -1,7 +1,7 @@
 import '../../App/constants.dart';
 import '../../Data/Providers/network_provider.dart';
 import '../../Domain/DTOs/request_data.dart';
-import '../../Domain/Interfaces/Repositories/network_repository_interdace.dart';
+import '../../Domain/Interfaces/Repositories/network_repository_interface.dart';
 import 'package:result_dart/result_dart.dart';
 
 //typedef AsyncResult<S, F> = Future<Result<Object, Object>>;
