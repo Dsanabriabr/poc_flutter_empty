@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'App/constants.dart';
 import 'Presentation/Routes/routes.dart';
+import 'Presentation/DependencyInjection/getit.dart';
 
 void main() {
+  setupGetIt();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  
   const MyApp({super.key});
 
   @override
